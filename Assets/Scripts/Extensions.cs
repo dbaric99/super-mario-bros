@@ -15,7 +15,7 @@ public static class Extensions
             return false;
         }
 
-        RaycastHit2D hit = Physics2D.CircleCast(rigidbody.position, RADIUS, direction, DISTANCE, layerMask);
+        RaycastHit2D hit = Physics2D.CircleCast(rigidbody.position, RADIUS, direction.normalized, DISTANCE, layerMask);
         return hit.collider != null && hit.rigidbody != rigidbody;
     }
 
