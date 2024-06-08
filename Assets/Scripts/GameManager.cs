@@ -34,10 +34,29 @@ public class GameManager : MonoBehaviour
         NewGame();
     }
 
+    public void PlayerDeath()
+    {
+        Lives--;
+
+        if (Lives > 0)
+        {
+            LoadLevel(World, Stage);
+        }
+        else
+        {
+            GameOver();
+        }
+    }
+
     private void NewGame()
     {
         Lives = 3;
         LoadLevel(1, 1);
+    }
+
+    private void GameOver()
+    {
+        Invoke(nameof(NewGame), 3f);
     }
 
     private void LoadLevel(int world, int stage)
