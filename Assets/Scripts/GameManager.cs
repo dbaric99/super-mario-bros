@@ -34,6 +34,17 @@ public class GameManager : MonoBehaviour
         NewGame();
     }
 
+    // Functionality for other levels is not implemented only base logic
+    public void NextLevel()
+    {
+        LoadLevel(World, Stage + 1);
+    }
+
+    public void PlayerDeath(float delay)
+    {
+        Invoke(nameof(PlayerDeath), delay);
+    }
+
     public void PlayerDeath()
     {
         Lives--;
