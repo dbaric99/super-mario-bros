@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -52,6 +53,17 @@ public class PlayerMovement : MonoBehaviour
         rigidbody.MovePosition(position);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer != LayerMask.NameToLayer("PowerUp"))
+        {
+            if (transform.DotPositionTest(collision.transform, Vector2.up))
+            {
+                velocity.y = 0f;
+            }
+        }
+    }
+
     private void HorizontalMovement()
     {
         inputAxis = Input.GetAxis(SCROLL_AXIS);
@@ -60,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void GroundedMovement()
     {
+        velocity.y = Mathf.Max(velocity.y, 0f);
         IsJumping = velocity.y > 0f;
 
         if (Input.GetButtonDown("Jump"))
