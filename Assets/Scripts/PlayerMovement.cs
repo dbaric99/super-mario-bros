@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     public float Gravity => (-2f * maxJumpHeight) / Mathf.Pow(maxJumpTime / 2f, 2);
     public bool IsGrounded { get; private set; }
     public bool IsJumping { get; private set; }
+    public bool IsRunning => Mathf.Abs(velocity.x) > 0.25f || Mathf.Abs(inputAxis) > 0.25f;
+    public bool IsSliding => (inputAxis > 0f && velocity.x < 0f) || (inputAxis < 0f && velocity.x > 0f);
 
     private new Rigidbody2D rigidbody;
     private new Camera camera;
