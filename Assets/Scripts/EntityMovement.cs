@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class EntityMovement : MonoBehaviour
 {
@@ -14,13 +15,12 @@ public class EntityMovement : MonoBehaviour
         enabled = false;
     }
 
-    //TODO deprecated methods replace these
-    private void OnBecomeVisible()
+    private void OnBecameVisible()
     {
         enabled = true;
     }
 
-    private void OnBecomeInvisible()
+    private void OnBecameInvisible()
     {
         enabled = false;
     }
