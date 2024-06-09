@@ -389,6 +389,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7509425276205788575, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 951901995432908229, guid: 7ae848654b062407ea1cb8ae9ed48788, type: 3}
     - target: {fileID: 9126270430238921308, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (1)
@@ -598,6 +602,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7509425276205788575, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 951901995432908229, guid: 7ae848654b062407ea1cb8ae9ed48788, type: 3}
     - target: {fileID: 9126270430238921308, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (3)
@@ -1667,6 +1675,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7509425276205788575, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 951901995432908229, guid: 7ae848654b062407ea1cb8ae9ed48788, type: 3}
     - target: {fileID: 9126270430238921308, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (1)
@@ -1795,6 +1807,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7509425276205788575, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 951901995432908229, guid: 7ae848654b062407ea1cb8ae9ed48788, type: 3}
     - target: {fileID: 8971142113677267372, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Size.x
       value: 2
@@ -2953,6 +2969,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7509425276205788575, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 951901995432908229, guid: 7ae848654b062407ea1cb8ae9ed48788, type: 3}
     - target: {fileID: 9126270430238921308, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (7)
@@ -3225,6 +3245,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7509425276205788575, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 951901995432908229, guid: 7ae848654b062407ea1cb8ae9ed48788, type: 3}
     - target: {fileID: 9126270430238921308, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (6)
@@ -3621,6 +3645,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7509425276205788575, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 951901995432908229, guid: 7ae848654b062407ea1cb8ae9ed48788, type: 3}
     - target: {fileID: 9126270430238921308, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (4)
@@ -3854,6 +3882,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7509425276205788575, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 951901995432908229, guid: 7ae848654b062407ea1cb8ae9ed48788, type: 3}
     - target: {fileID: 9126270430238921308, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (2)
@@ -5556,6 +5588,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7509425276205788575, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 951901995432908229, guid: 7ae848654b062407ea1cb8ae9ed48788, type: 3}
     - target: {fileID: 9126270430238921308, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (2)
@@ -5882,6 +5918,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7509425276205788575, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 951901995432908229, guid: 7ae848654b062407ea1cb8ae9ed48788, type: 3}
     - target: {fileID: 9126270430238921308, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (4)
@@ -6498,6 +6538,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7509425276205788575, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 951901995432908229, guid: 7ae848654b062407ea1cb8ae9ed48788, type: 3}
     - target: {fileID: 9126270430238921308, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Name
       value: MysteryBlock
@@ -7297,6 +7341,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7509425276205788575, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 951901995432908229, guid: 7ae848654b062407ea1cb8ae9ed48788, type: 3}
     - target: {fileID: 9126270430238921308, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (3)
@@ -7689,6 +7737,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7509425276205788575, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 951901995432908229, guid: 7ae848654b062407ea1cb8ae9ed48788, type: 3}
     - target: {fileID: 9126270430238921308, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Name
       value: MysteryBlock
@@ -8610,6 +8662,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7509425276205788575, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 951901995432908229, guid: 7ae848654b062407ea1cb8ae9ed48788, type: 3}
     - target: {fileID: 9126270430238921308, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Name
       value: MysteryBlock

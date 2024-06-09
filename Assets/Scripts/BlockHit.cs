@@ -5,6 +5,7 @@ public class BlockHit : MonoBehaviour
 {
     private const string PLAYER_TAG = "Player";
 
+    public GameObject item;
     public Sprite emptyBlock;
     public int maxHits = -1;
 
@@ -31,6 +32,11 @@ public class BlockHit : MonoBehaviour
         if (maxHits == 0)
         {
             spriteRenderer.sprite = emptyBlock;
+        }
+
+        if (item != null)
+        {
+            Instantiate(item, transform.position, Quaternion.identity);
         }
 
         StartCoroutine(Animate());
