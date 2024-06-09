@@ -1,0 +1,41 @@
+using UnityEngine;
+
+public class PowerUp : MonoBehaviour
+{
+    private const string PLAYER_TAG = "Player";
+
+    public enum Type
+    {
+        Coin,
+        ExtraLife,
+        MagicMushroom,
+        Starpower,
+    }
+
+    public Type type;
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag(PLAYER_TAG))
+        {
+            Collect(other.gameObject);
+        }
+    }
+
+    private void Collect(GameObject player)
+    {
+        switch (type)
+        {
+            case Type.Coin:
+                break;
+            case Type.ExtraLife:
+                break;
+            case Type.MagicMushroom:
+                break;
+            case Type.Starpower:
+                break;
+        }
+
+        Destroy(gameObject);
+    }
+}

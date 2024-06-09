@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1188140543773505467}
   - component: {fileID: 328290931252257270}
   - component: {fileID: -934982995909080112}
+  - component: {fileID: 4030119103807813086}
   m_Layer: 6
   m_Name: Starman
   m_TagString: Untagged
@@ -222,3 +223,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dc72eb210b85401c9823ae0f4a43c41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4030119103807813086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5340941559713026289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2bad74ccbfe4138b9759d5d2d2a556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 3
