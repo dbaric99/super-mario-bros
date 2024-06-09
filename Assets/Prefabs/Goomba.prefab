@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3925970309784654195}
   - component: {fileID: 6677754974759997762}
   - component: {fileID: 8826021106379860781}
+  - component: {fileID: 4192564863362256804}
   m_Layer: 7
   m_Name: Goomba
   m_TagString: Untagged
@@ -194,3 +195,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   squashedSprite: {fileID: 0}
+--- !u!114 &4192564863362256804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8218195568989535390}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa454ea47bbc42daa278eafb2d6777f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 7206353864307648314}
+  deadSprite: {fileID: 0}

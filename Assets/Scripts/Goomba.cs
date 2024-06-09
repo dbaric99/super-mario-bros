@@ -3,6 +3,7 @@ using UnityEngine;
 public class Goomba : MonoBehaviour
 {
     private const string PLAYER_TAG = "Player";
+    private const string SHELL_LAYER = "Shell";
 
     public Sprite squashedSprite;
 
@@ -23,6 +24,14 @@ public class Goomba : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer(SHELL_LAYER))
+        {
+            Hit();
+        }
+    }
+
     private void Flatten()
     {
         GetComponent<Collider2D>().enabled = false;
@@ -30,5 +39,12 @@ public class Goomba : MonoBehaviour
         GetComponent<AnimatedSprite>().enabled = false;
         GetComponent<SpriteRenderer>().sprite = squashedSprite;
         Destroy(gameObject, 0.75f);
+    }
+
+    private void Hit()
+    {
+        GetComponent<AnimatedSprite>().enabled = false;
+        GetComponent<DeathAnimation>().enabled = true;
+        Destroy(gameObject, 3f);
     }
 }
