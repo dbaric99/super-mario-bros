@@ -36,12 +36,6 @@ public class GameManager : MonoBehaviour
         NewGame();
     }
 
-    // Functionality for other levels is not implemented only base logic
-    public void NextLevel()
-    {
-        LoadLevel(World, Stage + 1);
-    }
-
     public void PlayerDeath(float delay)
     {
         Invoke(nameof(PlayerDeath), delay);
@@ -77,6 +71,14 @@ public class GameManager : MonoBehaviour
         Lives++;
     }
 
+    public void LoadLevel(int world, int stage)
+    {
+        World = world;
+        Stage = stage;
+
+        SceneManager.LoadScene($"{world}-{stage}");
+    }
+
     private void NewGame()
     {
         Lives = 3;
@@ -88,13 +90,5 @@ public class GameManager : MonoBehaviour
     private void GameOver()
     {
         Invoke(nameof(NewGame), 3f);
-    }
-
-    private void LoadLevel(int world, int stage)
-    {
-        World = world;
-        Stage = stage;
-
-        SceneManager.LoadScene($"{world}-{stage}");
     }
 }
