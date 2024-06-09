@@ -7,12 +7,12 @@ public class PlayerSpriteRenderer : MonoBehaviour
     public Sprite slide;
     public AnimatedSprite run;
 
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer SpriteRenderer { get; private set; }
     private PlayerMovement playerMovement;
 
     private void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
         playerMovement = GetComponentInParent<PlayerMovement>();
     }
 
@@ -22,26 +22,26 @@ public class PlayerSpriteRenderer : MonoBehaviour
 
         if (playerMovement.IsJumping)
         {
-            spriteRenderer.sprite = jump;
+            SpriteRenderer.sprite = jump;
         }
         else if (playerMovement.IsSliding)
         {
-            spriteRenderer.sprite = slide;
+            SpriteRenderer.sprite = slide;
         }
         else if (!playerMovement.IsRunning)
         {
-            spriteRenderer.sprite = idle;
+            SpriteRenderer.sprite = idle;
         }
     }
 
     private void OnEnable()
     {
-        spriteRenderer.enabled = true;
+        SpriteRenderer.enabled = true;
     }
 
     private void OnDisable()
     {
-        spriteRenderer.enabled = false;
+        SpriteRenderer.enabled = false;
         run.enabled = false;
     }
 }
