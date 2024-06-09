@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 6595303997060221836}
   - component: {fileID: 4422283341490200386}
   - component: {fileID: 4810589972611969364}
+  - component: {fileID: 401410758445795085}
   m_Layer: 3
   m_Name: Mario
   m_TagString: Player
@@ -353,3 +354,17 @@ MonoBehaviour:
   speed: 8
   maxJumpHeight: 5
   maxJumpTime: 1
+--- !u!114 &401410758445795085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6164315005020117463}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa454ea47bbc42daa278eafb2d6777f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 8062800837028013863}
+  deadSprite: {fileID: 21300000, guid: e9345d9e9a21949478e4292b904591cd, type: 3}
