@@ -17,7 +17,11 @@ public class Koopa : MonoBehaviour
         {
             PlayerManager playerManager = collision.gameObject.GetComponent<PlayerManager>();
 
-            if (collision.transform.DotPositionTest(transform, Vector2.down))
+            if (playerManager.IsStarpower)
+            {
+                Hit();
+            }
+            else if (collision.transform.DotPositionTest(transform, Vector2.down))
             {
                 EnterShell();
             }
@@ -40,7 +44,15 @@ public class Koopa : MonoBehaviour
             else
             {
                 PlayerManager playerManager = other.GetComponent<PlayerManager>();
-                playerManager.Hit();
+
+                if (playerManager.IsStarpower)
+                {
+                    Hit();
+                }
+                else
+                {
+                    playerManager.Hit();
+                }
             }
         }
         else if (!isShelled && other.gameObject.layer == LayerMask.NameToLayer(SHELL_LAYER))

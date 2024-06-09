@@ -13,7 +13,11 @@ public class Goomba : MonoBehaviour
         {
             PlayerManager playerManager = collision.gameObject.GetComponent<PlayerManager>();
 
-            if (collision.transform.DotPositionTest(transform, Vector2.down))
+            if (playerManager.IsStarpower)
+            {
+                Hit();
+            }
+            else if (collision.transform.DotPositionTest(transform, Vector2.down))
             {
                 Flatten();
             }
