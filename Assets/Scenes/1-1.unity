@@ -5878,6 +5878,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6218548096631867436, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9126270430238921308, guid: ae15d88385e274e7a8a09f8839247721, type: 3}
       propertyPath: m_Name
       value: MysteryBlock (4)
