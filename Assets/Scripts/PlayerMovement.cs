@@ -3,13 +3,15 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private const string SCROLL_AXIS = "Horizontal";
+    private const string POWERUP_LAYER = "PowerUp";
+    private const string ENEMY_LAYER = "Enemy";
 
     public float speed = 8f;
     public float maxJumpHeight = 5f;
     public float maxJumpTime = 1f;
 
-    public float JumpForce => (2f * maxJumpHeight) / (maxJumpTime / 2f);
-    public float Gravity => (-2f * maxJumpHeight) / Mathf.Pow(maxJumpTime / 2f, 2);
+    public float JumpForce => 2f * maxJumpHeight / (maxJumpTime / 2f);
+    public float Gravity => -2f * maxJumpHeight / Mathf.Pow(maxJumpTime / 2f, 2);
     public bool IsGrounded { get; private set; }
     public bool IsJumping { get; private set; }
     public bool IsRunning => Mathf.Abs(velocity.x) > 0.25f || Mathf.Abs(inputAxis) > 0.25f;
@@ -53,12 +55,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer != LayerMask.NameToLayer("PowerUp"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer(ENEMY_LAYER) && transform.DotPositionTest(collision.transform, Vector2.down))
         {
-            if (transform.DotPositionTest(collision.transform, Vector2.up))
-            {
-                velocity.y = 0f;
-            }
+            velocity.y = JumpForce / 2f;
+            IsJumping = true;
+        }
+        if (collision.gameObject.layer != LayerMask.NameToLayer(POWERUP_LAYER) && transform.DotPositionTest(collision.transform, Vector2.up))
+        {
+            velocity.y = 0f;
         }
     }
 
