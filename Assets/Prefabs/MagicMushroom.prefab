@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3783733421399733978}
   - component: {fileID: 8249880834219805320}
   - component: {fileID: 1328641970109646695}
+  - component: {fileID: -4450672660695865363}
+  - component: {fileID: -7934526382032531634}
   m_Layer: 6
   m_Name: MagicMushroom
   m_TagString: Untagged
@@ -194,3 +196,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-4450672660695865363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2165988992665283030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dc72eb210b85401c9823ae0f4a43c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7934526382032531634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2165988992665283030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a4bfe3810ff4ce5a30ac07251eb170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  direction: {x: 1, y: 0}
