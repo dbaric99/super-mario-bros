@@ -7469,6 +7469,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goomba
       objectReference: {fileID: 0}
+    - target: {fileID: 8826021106379860781, guid: 259edceaed2764aa39193615a177857d, type: 3}
+      propertyPath: squashedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dceda839fbcc74441aef5f93f32bdc1a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
