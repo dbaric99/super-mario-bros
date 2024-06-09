@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3938523733864879823}
   - component: {fileID: 7892313377564639635}
   - component: {fileID: 7494935226136918081}
+  - component: {fileID: 6669387291133078636}
   m_Layer: 7
   m_Name: Koopa
   m_TagString: Untagged
@@ -180,3 +181,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8b6997b812bbe4840ae3afbb20f2312b, type: 3}
   - {fileID: 21300000, guid: abbbfac621fc9c549b0e50177934ecfc, type: 3}
   framerate: 0.25
+--- !u!114 &6669387291133078636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9184640465238214915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 716200aadba2641f3bffddf559715b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shellSprite: {fileID: 21300000, guid: f882caca8db1d9547be2c030f5a6b82e, type: 3}
