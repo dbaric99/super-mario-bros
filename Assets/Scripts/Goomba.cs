@@ -8,9 +8,18 @@ public class Goomba : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag(PLAYER_TAG) && collision.transform.DotPositionTest(transform, Vector2.down))
+        if (collision.gameObject.CompareTag(PLAYER_TAG))
         {
-            Flatten();
+            PlayerManager playerManager = collision.gameObject.GetComponent<PlayerManager>();
+
+            if (collision.transform.DotPositionTest(transform, Vector2.down))
+            {
+                Flatten();
+            }
+            else
+            {
+                playerManager.Hit();
+            }
         }
     }
 
